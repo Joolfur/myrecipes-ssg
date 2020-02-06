@@ -1,1 +1,1 @@
-# myrecipes-ssg
+# recipes-ssg

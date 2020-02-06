@@ -1,0 +1,22 @@
+// Ná í layot síðuna
+// @import 'layout';
+
+$bcolor: bisque;
+$font: 'Merriweather', serif;
+$fontcolor: rgb(3, 116, 150);
+
+body {
+    background-color: $bcolor;
+    font-family: $font;
+}
+h1, h2, h3 {
+    color:$fontcolor
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+.mybutton {
+    background: #f7786b;
+    font-size: 0.75em;
+}
