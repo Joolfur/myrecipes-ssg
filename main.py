@@ -35,6 +35,7 @@ for post in POSTS:
         'content': POSTS[post],
         'title': post_metadata['title'],
         'date': post_metadata['date'],
+        'thumbnail': post_metadata['thumbnail']
     }
 
     post_html = post_template.render(post=post_data)
@@ -44,10 +45,6 @@ for post in POSTS:
     os.makedirs(os.path.dirname(post_file_path), exist_ok=True)
     with open(post_file_path, 'w') as file:
         file.write(post_html)
-
-
-
-
 
 """
 with open('content/turkish-pide.md', 'r') as file:

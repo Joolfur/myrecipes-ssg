@@ -1,15 +1,15 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<h1>{{post.title}}</h1>
 <div class="col-2">
-    <h1>{{post.title}}</h1>
-    <article class="col-2">
+    <article class = "allskonar">
         <p>
             <small>{{post.date}}</small>
             {{post.content}}
         </p>
-        <p>
-            <img src="../img/{{ post.thumbnail }}">
-        </p>
     </article>
+        <p class = "mynd">
+            <img src="../{{ post.thumbnail }}">
+        </p>
 {% endblock %}
